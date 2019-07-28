@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom Homework - Validare Formular</title>
+	<link rel="stylesheet" type="text/css" href="ValidareFormular.css">
+	<script src="ValidareFormular.js"></script>
+</head>
+<body>
+	<form onsubmit="preventD(event);">
+	<fieldset class="from">
+		<legend> Construiti in HTML si CSS un formular care sa contina 3 Input type
+          text, 2 Selecturi 3 Checkboxuri, 3 Radio Buttons si un Submit.</legend>
+		<div class="container-input">
+		<label>Input 1</label><input type="text" name=""> </br>
+		<label>Input 2</label><input type="text" name=""> </br>
+		<label>Input 3</label><input type="text" name=""> </br>
+		</div>
+		<div class="container-input">
+			<select class="" name="">
+				<option value="">Option 1</option>
+				<option value="">Option 2</option>
+			</select> </br>
+			<select class="" name="">
+				<option value="">Option 3</option>
+				<option value="">Option 4</option>
+			</select> </br>
+		</div>
+		<div class="container-input">
+			<label>Checkbox 1</label><input type="checkbox" name=""> </br>
+			<label>Checkbox 2</label><input type="checkbox" name=""> </br>
+			<label>Checkbox 3</label><input type="checkbox" name=""> </br>
+		</div>
+		<div class="container-input">
+			<label>Radio 1</label><input type="radio" name=""> </br>
+			<label>Radio 2</label><input type="radio" name=""> </br>
+			<label>Radio 3</label><input type="radio" name=""> </br>
+		</div>
+		<div class="container-input">
+		<input type="submit" name="" value="Submit">
+		</div>
+	</fieldset>
+	</form>
+
+	<form action="" onsubmit="exercise1(this,event)">
+	<fieldset class="form">
+		<legend> 1. Pastrati doar 2 inputuri si colorati ambele inputuri verzi daca
+          valoarea din casuta 1 si din casuta 2 sunt egale.</legend>
+		<div class="container-input">
+		<label>Input 1</label><input type="text" name="input1" placeholder="Type here"> </br>
+		<label>Input 2</label><input type="text" name="input2" placeholder="Type here"> </br>
+		</div>
+		 <div class="container-input">
+          <input type="submit" name="" value="Submit" />
+        </div>
+	</fieldset>
+	</form>
+
+	<form action="" onsubmit="exercise2(this, event)">
+	<fieldset class='form'>
+      <legend>2. Pastrati doar 2 inputuri si colorati inputul care are valoarea mai
+          mare. Daca sunt egale, colorati-le pe ambele.</legend>
+      <div class="container-input">
+        <label>Input 1<input type="text" name="input3" placeholder="Type here"></label><br>
+        <label>Input 2<input type="text" name="input4" placeholder="Type here"></label><br>
+      </div>
+       <div class="container-input">
+          <input type="submit" name="" value="Submit" />
+        </div>
+    </fieldset>
+	</form>
+
+	<form action="" onsubmit="exercise3(this,event)">
+		<fieldset class="form">
+			<legend>3. Pastrati doar 3 inputuri si afisati in al 3-lea input valoarea inputului mai mare dintre primul si al doilea.</legend>
+			<div class="container-input">
+			<label>Input 1<input type="text" name="input5" placeholder="Type here"></label><br>
+        	<label>Input 2<input type="text" name="input6" placeholder="Type here"></label><br>
+        	<label>Input 3<input type="text" name="input7" placeholder="Type here"></label><br>
+        	</div>
+			<div class="container-input">
+				<input type="submit" name="Submit">
+			</div>
+		</fieldset>
+	</form>
+
+	<form action="" onsubmit="exercise4(this,event)">
+		<fieldset class="form">
+			<legend>4. Pastrati doar 3 inputuri si afisati in al 3-lea input suma primului + celui de-al 2-lea  input.</legend>
+			<div class="container-input">
+			<label>Input 1<input type="text" name="input8" placeholder="Type here"></label><br>
+        	<label>Input 2<input type="text" name="input9" placeholder="Type here"></label><br>
+        	<label>Input 3<input type="text" name="input10" placeholder="Type here"></label><br>
+        	</div>
+			<div class="container-input">
+				<input type="submit" name="Submit">
+			</div>
+		</fieldset>
+	</form>
+
+		<fieldset class="form">
+			<legend>5. Pastrati doar 1 input si afisati intr-un span/div in coltul dreapta jos, lungimea sirului de caractere tastat.</legend>
+			<div class="container-input">
+			<label>Input 1<input type="text" name="input11" placeholder="Type here" onkeyup="exercise5()"></label></br>
+			</div>
+			<div id="text-length" class="container-input">0 characters</div>
+		</fieldset>
+
+		<fieldset class="form">
+			<legend>6. Plecand de la ex 5, limitati numarul de caractere la 10. In momentul in care am ajuns la 10, inrositi counterul si folosind event.preventDefault() pe evenimentul onkeypress opriti utilizatorul sa mai introduca caractere in plus.</legend>
+			<div class="container-input">
+			<label>Input 1<input type="text" name="input12" placeholder="Type here" onkeyup="exercise6()"></label></br>
+			</div>
+			<div id="text-length1" class="container-input">0 characters</div>
+		</fieldset>
+
+		<fieldset class="form">
+      		<legend> 7. Pastrati doar 1 input si folosind event.preventDefault pe evenimentul onkeypress, opriti utilizatorul sa mai introduca orice altceva decat numere.</legend>
+      <div class="container-input">
+        <label>Input 1<input type="text" name="input12" placeholder="Type here" onkeydown="exercise7()"/></label> </br>
+      </div>
+    </fieldset>
+
+</body>
+</html>

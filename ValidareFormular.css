@@ -1,0 +1,20 @@
+#text-length {
+  text-align: right;
+  border-radius: 1px;
+
+}
+
+#text-length1 {
+  text-decoration-color: red;
+  text-align: right;
+  border-radius: 1px;
+}
+
+.red-color {
+  color: red;
+}
+
+
+.green-background {
+  background-color: green;
+}
